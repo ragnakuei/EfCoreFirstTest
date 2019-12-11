@@ -27,7 +27,7 @@ namespace EfCoreFirstTest
                                .Build();
 
             serviceCollection.AddSingleton(_ => configuration);
-            serviceCollection.AddScoped<TestContextFactory>();
+            serviceCollection.AddScoped<TestCompany2ContextFactory>();
 
             _provider = serviceCollection.BuildServiceProvider();
         }

@@ -1,4 +1,4 @@
-namespace EfCoreFirstTest
+namespace EfCoreFirstTest.Models
 {
     public class Customer
     {

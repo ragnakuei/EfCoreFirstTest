@@ -1,7 +1,8 @@
+using EfCoreFirstTest.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace EfCoreFirstTest
+namespace EfCoreFirstTest.EntityTypeConfigurations
 {
     internal class CustomerConfiguration : IEntityTypeConfiguration<Customer>
     {

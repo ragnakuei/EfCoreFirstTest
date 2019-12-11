@@ -4,18 +4,18 @@ using Microsoft.Extensions.Configuration;
 
 namespace EfCoreFirstTest
 {
-    public class TestContextFactory : IDesignTimeDbContextFactory<TestDbContext>
+    public class TestCompany2ContextFactory : IDesignTimeDbContextFactory<TestDbContext>
     {
         private readonly IConfigurationRoot _configuration;
 
-        public TestContextFactory()
+        public TestCompany2ContextFactory()
         {
             _configuration = DiHelpers.DiFactory<IConfigurationRoot>();
         }
 
         public TestDbContext CreateDbContext(string[] args)
         {
-            var connectionString = _configuration.GetConnectionString("TestCompany1");
+            var connectionString = _configuration.GetConnectionString("TestCompany2");
 
             var optionBuilder = new DbContextOptionsBuilder<TestDbContext>()
                .UseSqlServer(connectionString

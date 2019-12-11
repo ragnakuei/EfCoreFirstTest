@@ -1,3 +1,4 @@
+using EfCoreFirstTest.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace EfCoreFirstTest
@@ -13,7 +14,7 @@ namespace EfCoreFirstTest
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(TestDbContext).Assembly
-                                                       , t => t.Namespace?.StartsWith("DbMigrations.EntityTypeConfigurations") == true);
+                                                       , t => t.Namespace?.StartsWith("EF.EntityTypeConfigurations") == true);
 
             modelBuilder.Entity<Customer>().ToTable("Customers");
         }
