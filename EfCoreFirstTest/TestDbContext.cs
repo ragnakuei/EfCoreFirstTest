@@ -1,5 +1,5 @@
-using EfCoreFirstTest.Models;
 using Microsoft.EntityFrameworkCore;
+using SharedLibrary.Models;
 
 namespace EfCoreFirstTest
 {

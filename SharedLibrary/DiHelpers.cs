@@ -3,7 +3,7 @@ using System.IO;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace EfCoreFirstTest
+namespace SharedLibrary
 {
     public static class DiHelpers
     {
@@ -27,7 +27,6 @@ namespace EfCoreFirstTest
                                .Build();
 
             serviceCollection.AddSingleton(_ => configuration);
-            serviceCollection.AddScoped<TestCompany2ContextFactory>();
 
             _provider = serviceCollection.BuildServiceProvider();
         }

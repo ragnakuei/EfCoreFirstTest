@@ -1,6 +1,6 @@
-using EfCoreFirstTest.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using SharedLibrary.Models;
 
 namespace EfCoreFirstTest.EntityTypeConfigurations
 {
