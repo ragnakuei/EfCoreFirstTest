@@ -19,6 +19,18 @@ namespace EfCoreFirstTest.EntityTypeConfigurations
             builder.Property(x => x.Id)
                    .HasColumnType(SqlDbTypes.Int)
                    .IsRequired();
+            
+            builder.Property(x => x.Name)
+                   .HasColumnType(SqlDbTypes.Nvarchar(100))
+                   .IsRequired();
+            
+            builder.Property(x => x.Tel)
+                   .HasColumnType(SqlDbTypes.Nvarchar(100))
+                   .IsRequired();
+            
+            builder.Property(x => x.Fax)
+                   .HasColumnType(SqlDbTypes.Nvarchar(100))
+                   .IsRequired();
         }
     }
 }
